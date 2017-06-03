@@ -60,7 +60,7 @@ This will use the following messages when logging.
 
 ```
 Not in scope.
-This is info.=> This will be appended.
+This is info. => This will be appended.
 ```
 
 ## Notes

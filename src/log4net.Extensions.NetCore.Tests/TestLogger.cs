@@ -147,7 +147,7 @@ namespace log4net.Extensions.AspNetCore.Tests
 
             var events = MemAppend.PopAllEvents();
             Assert.Equal(1, events.Length);
-            Assert.Equal("Test message.=> Test Scope 1", events[0].MessageObject);
+            Assert.Equal("Test message. => Test Scope 1", events[0].MessageObject);
         }
 
         [Fact]
@@ -167,8 +167,8 @@ namespace log4net.Extensions.AspNetCore.Tests
 
             var events = MemAppend.PopAllEvents();
             Assert.Equal(2, events.Length);
-            Assert.Equal("S2=> Scope 2", events[0].MessageObject);
-            Assert.Equal("S1=> Scope 1", events[1].MessageObject);
+            Assert.Equal("S2 => Scope 2", events[0].MessageObject);
+            Assert.Equal("S1 => Scope 1", events[1].MessageObject);
         }
 
         [Fact]

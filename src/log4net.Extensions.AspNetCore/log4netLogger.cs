@@ -40,22 +40,22 @@ namespace log4net.Extensions.AspNetCore
                 return;
             }
 
-            string message;
+            StringBuilder messageBuilder = new StringBuilder();
             if(formatter != null)
             {
-                message = formatter(state, exception);
+                messageBuilder.Append(formatter(state, exception));
             }
             else
             {
-                message = state?.ToString();
+                messageBuilder.Append(state);
             }
 
             if(EnableScopes)
             {
-                message = AppendScopeInformation(message);
+                AppendScopeInformation(messageBuilder);
             }
 
-            GetLoggerAct(logLevel)(message, exception);
+            GetLoggerAct(logLevel)(messageBuilder.ToString(), exception);
         }
 
         private bool LoggerEnagled(LogLevel logLevel)
@@ -100,17 +100,13 @@ namespace log4net.Extensions.AspNetCore
             }
         }
 
-        private string AppendScopeInformation(string message)
+        private void AppendScopeInformation(StringBuilder messageBuilder)
         {
             var current = log4netScope.Current;
 
             if(current != null)
             {
-                return message + $"=> {current}";
-            }
-            else
-            {
-                return message;
+                messageBuilder.Append($" => {current}");
             }
         }
     }

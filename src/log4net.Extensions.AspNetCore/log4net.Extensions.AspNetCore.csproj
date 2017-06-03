@@ -13,7 +13,7 @@
     <PackageLicenseUrl>https://github.com/Scottz0r/log4net.Extensions.AspNetCore/blob/master/LICENSE</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/Scottz0r/log4net.Extensions.AspNetCore</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Version>1.0.0-beta</Version>
+    <Version>1.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
