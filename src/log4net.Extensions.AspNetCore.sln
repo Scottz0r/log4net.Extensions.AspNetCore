@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "log4net.Extensions.AspNetCore", "log4net.Extensions.AspNetCore\log4net.Extensions.AspNetCore.csproj", "{0B1594C1-1AFA-4CF4-B129-FA3E38F41C6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "log4net.Extensions.NetCore.Tests", "log4net.Extensions.NetCore.Tests\log4net.Extensions.NetCore.Tests.csproj", "{3B098333-E175-4385-A768-86A04D35960E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B1594C1-1AFA-4CF4-B129-FA3E38F41C6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B1594C1-1AFA-4CF4-B129-FA3E38F41C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B1594C1-1AFA-4CF4-B129-FA3E38F41C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B1594C1-1AFA-4CF4-B129-FA3E38F41C6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B098333-E175-4385-A768-86A04D35960E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B098333-E175-4385-A768-86A04D35960E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B098333-E175-4385-A768-86A04D35960E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B098333-E175-4385-A768-86A04D35960E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.5</TargetFramework>
+    <Authors>Scott Clewell</Authors>
+    <Company />
+    <Product>log4net</Product>
+    <Description>Log4net provider for the Microsoft.Extensions.Logging framework. Easily add log4net logging to Asp.Net Core.</Description>
+    <Copyright>Copyright 2017</Copyright>
+    <PackageReleaseNotes>Beta release.</PackageReleaseNotes>
+    <PackageTags>log4net asp.net core netcore mvc</PackageTags>
+    <PackageProjectUrl>https://github.com/Scottz0r/log4net.Extensions.AspNetCore</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/Scottz0r/log4net.Extensions.AspNetCore/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/Scottz0r/log4net.Extensions.AspNetCore</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Version>1.0.0-beta</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.6" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="1.1.1" />
+  </ItemGroup>
+
+</Project>
