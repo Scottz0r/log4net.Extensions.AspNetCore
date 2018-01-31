@@ -104,10 +104,11 @@ namespace log4net.Extensions.AspNetCore
         {
             var current = log4netScope.Current;
 
-            if(current != null)
+            while(current != null)
             {
                 messageBuilder.Append($" => {current}");
-            }
+				current = current.Parent;
+			}
         }
     }
 }
